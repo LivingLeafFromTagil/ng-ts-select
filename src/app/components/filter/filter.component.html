@@ -1,0 +1,12 @@
+<div style="margin-bottom: 10px">
+  <input 
+  [(ngModel)]="inputValue"
+  [ngStyle]="{backgroundColor: backgroundColor, color: textColor}" 
+  style="width: 250px; padding: 5px;" 
+  type="text" 
+  name="option-title" 
+  id="option-title" 
+  placeholder="Введите значение для фильтрации" list="status"
+  (change)="inputChange()"
+  (ngModelChange)="ngModelInputChange()">
+</div>

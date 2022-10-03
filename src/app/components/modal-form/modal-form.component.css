@@ -1,0 +1,23 @@
+form{
+  position: relative;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+form>*{
+  margin-bottom: 15px;
+}
+
+.new-title, .new-back, .new-text{
+  display: block;
+}
+
+.new-title{
+  width: 250px;
+}
+
+.new-text, .new-back{
+  width: 150px;
+}

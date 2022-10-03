@@ -1,0 +1,12 @@
+<div class="select-options">
+  <datalist name="status" id="status"
+  style="width: 250px; padding: 5px; box-sizing: content-box"
+  [ngStyle]="{backgroundColor: selectedBackgroundColor, color: selectedTextColor}"
+  [(ngModel)]="selectedValue">
+    <option *ngFor="let opt of options"
+      [value]="opt.optionTitle" 
+      [ngStyle]="{color: opt.color.text, backgroundColor: opt.color.background}"
+      >
+    </option>
+  </datalist>
+</div>

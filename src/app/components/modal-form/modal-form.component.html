@@ -1,0 +1,13 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label for="new-title">Имя нового option:</label>
+  <input required name="new-title" class="new-title" type="text" formControlName="newTitle">
+  <p style="color: red;" *ngIf="title.errors?.required">Field is empty</p>
+  
+  <label for="new-title">Цвет текста:</label>
+  <input name="new-text" class="new-text" type="color" formControlName="newTextColor">
+
+  <label for="new-title">Цвет заднего фона:</label>
+  <input name="new-back" class="new-back" type="color" formControlName="newBackgroundColor">
+
+  <button type="submit">Принять</button>
+</form>

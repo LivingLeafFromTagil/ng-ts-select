@@ -1,0 +1,13 @@
+<div>
+  <app-modal *ngIf="modalService.isVisible$ | async">
+    <app-modal-form></app-modal-form>
+  </app-modal>
+  <h1>{{ title | titlecase }}</h1>
+  <app-filter></app-filter>
+  <app-select></app-select>
+  <div>
+    <button (click)="modalService.open()">
+      Добавить option
+    </button>
+  </div>
+</div>
